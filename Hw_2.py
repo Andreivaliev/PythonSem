@@ -25,21 +25,33 @@
 # этого Петя делает две подсказки. Он называет сумму этих чисел S и их
 # произведение P. Помогите Кате отгадать задуманные Петей числа.
 
-s=int(input())
-p=int(input())
-r=range(1001)
-flag=True
-k=d=0
-for x in r:
-    for y in r:
-        k=x*y
-        d=x+y
-        if s==d and p==k:
-            print(x,y)
-            flag=False
-        if x==1000 and y ==1000 and flag:
-            print("Error")
+# s=int(input())
+# p=int(input())
+# r=range(1001)
+# flag=True
+# k=d=0
+# for x in r:
+#     for y in r:
+#         k=x*y
+#         d=x+y
+#         if s==d and p==k:
+#             print(x,y)
+#             flag=False
+#         if x==1000 and y ==1000 and flag:
+#             print("Error")
             
+# Задача 14: Требуется вывести все целые степени двойки (т.е. числа
+# вида 2k), не превосходящие числа N.
 
-
+n=int(input("Введите число: "))
+flag=True
+k=0
+if n>=1:
+    while flag:
+        print(f"{2**k} ")
+        k+=1
+        if 2**k>=n:
+            flag=False
+else:
+    print("Неккорктное значение")     
 
