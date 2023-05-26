@@ -28,7 +28,6 @@
 s=int(input("Введите сумму двух чисел: "))
 p=int(input("Введите произведение двух чисел: "))
 r=range(1001)
-x=y=0
 flag=True
 for x in r:
     for y in r:
