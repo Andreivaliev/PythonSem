@@ -43,15 +43,15 @@
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа
 # вида 2k), не превосходящие числа N.
 
-n=int(input("Введите число: "))
-flag=True
-k=0
-if n>=1:
-    while flag:
-        print(f"{2**k} ")
-        k+=1
-        if 2**k>=n:
-            flag=False
-else:
-    print("Неккорктное значение")     
+# n=int(input("Введите число: "))
+# flag=True
+# k=0
+# if n>=1:
+#     while flag:
+#         print(f"{2**k} ")
+#         k+=1
+#         if 2**k>=n:
+#             flag=False
+# else:
+#     print("Неккорктное значение")     
 
