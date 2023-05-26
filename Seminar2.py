@@ -96,17 +96,17 @@
 записанных на новой строчке каждое. Здесь каждое
 число – это масса соответствующего арбуза
 
-n=int(input("Количество арбузов: "))
-r=range(n)
-max=min=0
-for i in r:
-    ves=int(input())
-    if max==0:
-        max=min=ves
-    elif ves>max:
-        max=ves
-    elif ves<min:
-        min=ves
-print(max,min)
+# n=int(input("Количество арбузов: "))
+# r=range(n)
+# max=min=0
+# for i in r:
+#     ves=int(input())
+#     if max==0:
+#         max=min=ves
+#     elif ves>max:
+#         max=ves
+#     elif ves<min:
+#         min=ves
+# print(max,min)
 
           
