@@ -13,9 +13,22 @@
 # (сдвиг - циклический) на K элементов вправо, K –
 # положительное число.
 
-myList = [1,2,32,11,21,41,2,24,14]
-n=int(input("Введите сдвиг: ")) % len(myList)
+# myList = [1,2,32,11,21,41,2,24,14]
+# n=int(input("Введите сдвиг: ")) % len(myList)
 
-for i in range(n):
-    myList.insert(0,myList.pop())
-print(myList)
+# for i in range(n):
+#     myList.insert(0,myList.pop())
+# print(myList)
+
+
+# Задача №21
+# Напишите программу для печати всех уникальных
+# значений в словаре.
+
+# myList = [{"V": "S001"}, {"V": "S002"}, {"VI": "S001"},
+# {"VI": "S005"}, {"VII": "S005"}, {"VIII":"S007"}] 
+
+# result=[]
+# for item in myList:
+#     result.append(list(item.values()[0]))
+# print(set(result))
