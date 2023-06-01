@@ -10,3 +10,23 @@
 # v=tuple(myList)
 # k = len(v)
 # print(k)
+
+
+# Задача №25. 
+# Напишите программу, которая принимает на вход
+# строку, и отслеживает, сколько раз каждый символ
+# уже встречался. Количество повторов добавляется к
+# символам с помощью постфикса формата _n.
+
+# text=input("Введите текст: ")
+# myList=text.split()
+# dictionary={}
+# count=""
+# for letters in myList:
+#     if letters in dictionary.keys():
+#         dictionary[letters]+=1
+#         count += f"{letters}_{dictionary[letters]}"+" "
+#     else:
+#         dictionary[letters]=0
+#         count += letters+" "
+# print(count)
