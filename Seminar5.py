@@ -16,28 +16,43 @@
 # заменяет оценки Василия, но наоборот: все
 # максимальные – на минимальные.
 
-def rev(arg):
-    max=1
-    new=[]
-    for i in arg:
-        k=int(i)
-        if k>max:
-            max=k
-    for i in arg:
-        k=int(i)
-        if k==max:
-            k=1
-        new.append(k)
-        print(max)
-        print(k)
-    return new
+# def rev(arg):
+#     max=1
+#     new=[]
+#     for i in arg:
+#         k=int(i)
+#         if k>max:
+#             max=k
+#     for i in arg:
+#         k=int(i)
+#         if k==max:
+#             k=1
+#         new.append(k)
+#         print(max)
+#         print(k)
+#     return new
 
 
-arg=[]
-r=0
-while r<6:
-    r=int(input("Введите число: "))
-    arg.append(r)
-    if r==6:
-        arg.pop()
-print(rev(arg))
+# arg=[]
+# r=0
+# while r<6:
+#     r=int(input("Введите число: "))
+#     arg.append(r)
+#     if r==6:
+#         arg.pop()
+# print(rev(arg))
+
+
+# Задача №35. 
+# Напишите функцию, которая принимает одно число и
+# проверяет, является ли оно простым
+
+def simp(x):
+    i=2
+    while i<x:
+        if x==(x//i)*i:
+            return "No"
+        i+=1
+    return "Yes"
+
+print(simp(int(input("Введите число для проверки: "))))
