@@ -13,5 +13,13 @@ def degree(a,b):
         return 1/a*degree(a,b+1) 
 
 
+def sum(a,b):
+    if a==0:
+        return b
+    return sum(a-1,b+1)
+
+
+
+
 
    
