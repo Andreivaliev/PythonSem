@@ -67,7 +67,6 @@
 # объявлять массивы и использовать циклы
 # (даже для ввода и вывода).
 
-import Funcs
-
-num=int(input("Введите число: "))
-Funcs.revers_range(num)
+# import Funcs
+# num=int(input("Введите число: "))
+# Funcs.revers_range(num)
