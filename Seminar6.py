@@ -30,15 +30,33 @@
 # состоит из целых чисел.
 
 
+# n=int(input("Количество элементов в первом списке: "))
+# list1=[]
+# print("Введите элементы списка: ")
+# list1= [int(input()) for i in range(n)]
+# count=0
+# i=0
+# while i < len(list1):
+#     if i != 0 and i < len(list1)-1 and  list1[i] > list1[i-1] + list1[i+1]:
+#         count+=1
+#     i+=1
+# print(f"Ответ : {count} ")
+ 
+# Задача №43.
+# Дан список чисел. Посчитайте, сколько в нем пар
+# элементов, равных друг другу. Считается, что любые
+# два элемента, равные друг другу образуют одну пару,
+# которую необходимо посчитать. Вводится список
+# чисел. Все числа списка находятся на разных
+# строках.
+
 n=int(input("Количество элементов в первом списке: "))
 list1=[]
 print("Введите элементы списка: ")
 list1= [int(input()) for i in range(n)]
 count=0
-i=0
-while i < len(list1):
-    if i != 0 and i < len(list1)-1 and  list1[i] > list1[i-1] + list1[i+1]:
-        count+=1
-    i+=1
+set1=set(list1)
+for i in set1:
+    count+=list1.count(i)//2
+
 print(f"Ответ : {count} ")
- 
