@@ -14,6 +14,15 @@ def degree(a,b):
 
 
 def sum(a,b):
+
     if a==0:
         return b
     return sum(a-1,b+1)
+
+
+def sum_of_dividers(num):
+    sum=1
+    for i in range(2, num // 2 + 1):
+        if num %i == 0:
+            sum+=i
+    return sum
