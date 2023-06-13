@@ -26,3 +26,5 @@ def sum_of_dividers(num):
         if num %i == 0:
             sum+=i
     return sum
+
+
