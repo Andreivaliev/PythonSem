@@ -27,4 +27,16 @@ def sum_of_dividers(num):
             sum+=i
     return sum
 
-
+def find_farthest_orbit(orbits):
+    list1=list(filter(lambda x: x[0]!=x[1],orbits))
+    max=0
+    count=0
+    list2=[]
+    for i in list1:
+        if i[0]*i[1]>max:
+            max=i[0]*i[1]
+            count+=1
+            list2.append((i[0],i[1]))
+            if count>1:
+                list2.pop(0)
+    return list2
