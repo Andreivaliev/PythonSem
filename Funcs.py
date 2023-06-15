@@ -43,7 +43,7 @@ def find_farthest_orbit(orbits):
 
 def slog(st):
     sum=0
-    for word in list1:
+    for word in st:
         count=0
         for i in word:
             if i in 'аеёиоуыэюя':
