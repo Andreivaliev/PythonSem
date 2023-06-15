@@ -40,3 +40,15 @@ def find_farthest_orbit(orbits):
             if count>1:
                 list2.pop(0)
     return list2
+
+def slog(st):
+    sum=0
+    for word in list1:
+        count=0
+        for i in word:
+            if i in 'аеёиоуыэюя':
+                count+=1
+        if sum>0 and sum!=count:
+            return False
+        sum=count
+    return True  
