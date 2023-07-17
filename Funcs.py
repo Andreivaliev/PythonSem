@@ -55,37 +55,40 @@ def slog(st):
 
 
 
-
+import os
 
 def show_contacts(file_name):
+    os.system('CLS')
     with open(file_name, 'r') as file:
         date=file.readlines()
 
         for contact in date:
-            print(contact)
-    input("press any key")
-    
+            print(contact,end='')
+
+    input("\npress any key")
+
 def add_contact(file_name):
+    os.system('CLS')
     with open(file_name, 'a') as file:
         res = ''
         res += input("Input a surname of contact: ")
         res += input("Input a name of contact: ")
         res += input("Input a phone number of contact: ")
 
-        file.write(res)
+        file.write('\n'+res)
     input("Contact was successfully contact! Press any key")   
 
 def search_contact(file_name):
+    os.system('CLS')
     target=input("Input a name of contact for searching: ")
 
     with open(file_name, 'r') as file:
-        data = file.readlines()
+        contacts = file.readlines()
 
-        if target in data:
-            for contact in data:
-                if target in contact:
-                    print(contact)
-                    break
+        for contact in contacts:
+            if target in contact:
+                print(contact)
+                break
         else:
             print("there is no contacts with this name.")
     input("press any key")
@@ -96,11 +99,21 @@ def drawing():
     print('3 - search contact')
     print('4 - exist')
 
-def main():
+def main(file_name):
     while True:
         os.system('CLS')
         drawing()
+        user_choice = int(input("Input a number from 1 to 4: "))
 
+        if user_choice == 1:
+            show_contacts(file_name)
+        elif user_choice == 2:
+            add_contact(file_name)
+        elif user_choice == 3:
+            search_contact(file_name)
+        elif user_choice == 4:
+            print("Have a nice day!")
+            return
 
 
 
