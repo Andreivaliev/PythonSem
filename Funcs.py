@@ -51,4 +51,57 @@ def slog(st):
         if sum>0 and sum!=count:
             return False
         sum=count
-    return True  
+    return True 
+
+
+
+
+
+def show_contacts(file_name):
+    with open(file_name, 'r') as file:
+        date=file.readlines()
+
+        for contact in date:
+            print(contact)
+    input("press any key")
+    
+def add_contact(file_name):
+    with open(file_name, 'a') as file:
+        res = ''
+        res += input("Input a surname of contact: ")
+        res += input("Input a name of contact: ")
+        res += input("Input a phone number of contact: ")
+
+        file.write(res)
+    input("Contact was successfully contact! Press any key")   
+
+def search_contact(file_name):
+    target=input("Input a name of contact for searching: ")
+
+    with open(file_name, 'r') as file:
+        data = file.readlines()
+
+        if target in data:
+            for contact in data:
+                if target in contact:
+                    print(contact)
+                    break
+        else:
+            print("there is no contacts with this name.")
+    input("press any key")
+
+def drawing():
+    print('1 - show contacts')
+    print('2 - add contact')
+    print('3 - search contact')
+    print('4 - exist')
+
+def main():
+    while True:
+        os.system('CLS')
+        drawing()
+
+
+
+
+
